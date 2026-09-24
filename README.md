@@ -15,7 +15,7 @@ Measures real wall-clock latency and real cost (from each provider's actual toke
 ## Setup
 
 ```bash
-git clone https://github.com/<github.com/prerak1603>/jev-vs-claude-benchmark
+git clone https://github.com/prerak1603/jev-vs-claude-benchmark
 cd jev-vs-claude-benchmark
 pip install -r requirements.txt
 cp .env.example .env
