@@ -15,7 +15,7 @@ Measures real wall-clock latency and real cost (from each provider's actual toke
 ## Setup
 
 ```bash
-git clone https://github.com/<your-username>/jev-vs-claude-benchmark
+git clone https://github.com/<github.com/prerak1603>/jev-vs-claude-benchmark
 cd jev-vs-claude-benchmark
 pip install -r requirements.txt
 cp .env.example .env
@@ -43,10 +43,12 @@ See [`results/`](./results) for saved runs. Numbers vary run to run (live APIs),
 
 | Model | Avg Latency | Avg Cost |
 |---|---|---|
-| Jev | — ms | $— |
-| Claude (reasoning) | — s | $— |
+| Jev | 660ms | $0.0000136 |
+| Claude (reasoning) | 8.70s | $0.00564 |
 
-*(filled in after first real run)*
+**13x faster, 416x cheaper.**
+
+Notably, the cost gap (416x) lines up closely with TypeSafe's own claimed 445x. The speed gap (13x) is far smaller than their claimed 193x — this run didn't use extended reasoning mode, just standard prose reasoning.
 
 ## Why the gap exists
 
